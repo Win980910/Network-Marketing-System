@@ -10,9 +10,10 @@ $bgcolor: rgb(25, 25, 81);
 body {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
+  display: flex;
 }
 
-/* ----------↓-↓-↓-↓-↓-↓---------- Navgation ----------↓-↓-↓-↓-↓-↓---------- */
+/* ----------↓-↓-↓-↓-↓-↓---------- Side Navgation ----------↓-↓-↓-↓-↓-↓---------- */
 
 #side-nav {
   background-color: $bgcolor;
@@ -31,26 +32,27 @@ body {
     }
   }
 
-  .nav-title{
+  .nav-title {
     margin-top: 40px;
 
-    li{
+    li {
       list-style: none;
       padding: 18px 0;
       margin: 0 15px 0 15px;
       border-radius: 10px;
       transition: 0.3s ease;
 
-      &:hover{
+      &:hover {
         background-color: rgb(255, 255, 255, 0.3);
         cursor: pointer;
 
-        i, a{
+        i,
+        a {
           color: #fff;
         }
       }
 
-      i{
+      i {
         color: rgb(210, 210, 210);
         width: 30px;
         height: 30px;
@@ -60,11 +62,44 @@ body {
         margin: 0 20px 0 25px;
       }
 
-      a{
+      a {
         text-decoration: none;
         color: rgb(210, 210, 210);
         font-size: 18px;
       }
+    }
+  }
+}
+
+/* ----------↓-↓-↓-↓-↓-↓---------- Header ----------↓-↓-↓-↓-↓-↓---------- */
+
+#interface {
+  width: calc(100% - 300px);
+
+  .header {
+    background-color: #fff;
+    padding: 5px 30px;
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+  }
+
+  .profile {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    i {
+      color: rgb(246, 184, 0);
+      font-size: 25px;
+      margin-right: 20px;
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: solid 1px rgb(48, 48, 48);
     }
   }
 }

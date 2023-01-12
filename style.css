@@ -9,9 +9,10 @@
 body {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
+  display: flex;
 }
 
-/* ----------↓-↓-↓-↓-↓-↓---------- Navgation ----------↓-↓-↓-↓-↓-↓---------- */
+/* ----------↓-↓-↓-↓-↓-↓---------- Side Navgation ----------↓-↓-↓-↓-↓-↓---------- */
 #side-nav {
   background-color: rgb(25, 25, 81);
   width: 300px;
@@ -41,7 +42,8 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
 }
-#side-nav .nav-title li:hover i, #side-nav .nav-title li:hover a {
+#side-nav .nav-title li:hover i,
+#side-nav .nav-title li:hover a {
   color: #fff;
 }
 #side-nav .nav-title li i {
@@ -57,4 +59,30 @@ body {
   text-decoration: none;
   color: rgb(210, 210, 210);
   font-size: 18px;
+}
+
+/* ----------↓-↓-↓-↓-↓-↓---------- Header ----------↓-↓-↓-↓-↓-↓---------- */
+#interface {
+  width: calc(100% - 300px);
+}
+#interface .header {
+  background-color: #fff;
+  padding: 5px 30px;
+  box-shadow: 0 4px 6px -6px #222;
+}
+#interface .profile {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+#interface .profile i {
+  color: rgb(246, 184, 0);
+  font-size: 25px;
+  margin-right: 20px;
+}
+#interface .profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 1px rgb(48, 48, 48);
 }/*# sourceMappingURL=style.css.map */
