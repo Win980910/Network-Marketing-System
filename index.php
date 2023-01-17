@@ -1,58 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include_once 'navigation.php';
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Dashboard</title>
-</head>
+<?php
+include_once 'header.php';
+?>
 
-<body>
-    <section id="side-nav">
-        <div class="logo">
-            <img src="images/logo.png" alt="Company Logo">
-            <h3>Company Logo</h3>
+
+<h2 class="page-title">Dashboard</h2>
+
+<div class="values">
+    <div class="val-box">
+        <h4>Total Loans</h4>
+        <span>3,000</span>
+
+        <div class="val-box-bottom">
         </div>
+    </div>
 
-        <div class="nav-title">
-            <li>
-                <i class="fa-solid fa-house"></i><a href="#">Dashboard</a>
-            </li>
-            <li>
-                <i class="fa-solid fa-network-wired"></i><a href="#">Network</a>
-            </li>
-            <li>
-                <i class="fa-solid fa-dollar-sign"></i><a href="#">Loan</a>
-            </li>
-            <li>
-                <i class="fa-solid fa-clock-rotate-left"></i><a href="#">Payment History</a>
-            </li>
-            <li>
-                <i class="fa-solid fa-money-bill-transfer"></i><a href="#">Transaction</a>
-            </li>
-            <li>
-                <i class="fa-solid fa-user-group"></i><a href="#">CRM</a>
-            </li>
-            <li>
-                <i class="fa-solid fa-file-lines"></i><a href="#">Reports</a>
-            </li>
-            <li>
-                <i class="fa-solid fa-user"></i><a href="#">Users</a>
-            </li>
-        </div>
-    </section>
+    <div class="val-box">
+        <h4>Active Loans</h4>
+        <span>2,000</span>
 
-    <section id="interface">
-        <div class="header">
-            <div class="profile">
-                <i class="far fa-bell"></i>
-                <img src="images/hamster.jpg" alt="profile">
-            </div>
+        <div class="val-box-bottom">
         </div>
-    </section>
+    </div>
+
+    <div class="val-box">
+        <h4>Pending Loans</h4>
+        <span>1,000</span>
+
+        <div class="val-box-bottom">
+        </div>
+    </div>
+
+    <div class="val-box">
+        <h4>Overdue Loans</h4>
+        <span>500</span>
+
+        <div class="val-box-bottom">
+        </div>
+    </div>
+</div>
+
+<section id="content">
+    <h2>Upcoming Due Loans</h2>
+
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Customer Name</th>
+            <th>Reference No.</th>
+            <th>Repayment Amount</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</section>
+</section>
 </body>
 
 </html>

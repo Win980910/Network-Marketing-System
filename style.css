@@ -10,6 +10,7 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   display: flex;
+  background-color: rgb(231, 231, 231);
 }
 
 /* ----------↓-↓-↓-↓-↓-↓---------- Side Navgation ----------↓-↓-↓-↓-↓-↓---------- */
@@ -17,6 +18,7 @@ body {
   background-color: rgb(25, 25, 81);
   width: 300px;
   height: 100%;
+  position: fixed;
 }
 #side-nav .logo {
   display: flex;
@@ -64,6 +66,8 @@ body {
 /* ----------↓-↓-↓-↓-↓-↓---------- Header ----------↓-↓-↓-↓-↓-↓---------- */
 #interface {
   width: calc(100% - 300px);
+  margin-left: 300px;
+  position: relative;
 }
 #interface .header {
   background-color: #fff;
@@ -85,4 +89,69 @@ body {
   height: 50px;
   border-radius: 50%;
   border: solid 1px rgb(48, 48, 48);
+}
+
+/* ----------↓-↓-↓-↓-↓-↓---------- Content ----------↓-↓-↓-↓-↓-↓---------- */
+#interface .page-title {
+  color: #444a53;
+  padding: 20px 30px 0 30px;
+  font-size: 30px;
+  font-weight: 700;
+  justify-content: center;
+}
+#interface .values {
+  padding: 30px 30px 0 30px;
+  display: flex;
+}
+#interface .values .val-box {
+  background-color: #fff;
+  width: 235px;
+  padding: 16px 20px 0 20px;
+  margin-right: 25px;
+  border-radius: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+#interface .values .val-box h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+#interface .values .val-box span {
+  font-size: 30px;
+  color: #222;
+}
+#interface .values .val-box .val-box-bottom {
+  background-color: #222;
+  width: 235px;
+  height: 20px;
+  margin-left: -20px;
+  margin-top: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+#content {
+  margin-left: 30px;
+  margin-top: 50px;
+}
+#content h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+td,
+th {
+  border: 1px solid darkgray;
+  padding: 20px 0px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }/*# sourceMappingURL=style.css.map */
