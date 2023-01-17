@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Dashboard</title>
+    <title>Network Marketing System</title>
 </head>
 
 <body>
@@ -19,7 +19,10 @@
 
         <div class="nav-title">
             <li>
-                <i class="fa-solid fa-house"></i><a href="#">Dashboard</a>
+                <i class="fa-solid fa-house"></i><a href="index.php">Dashboard</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-clipboard-user"></i><a href="hrm.php">HRM</a>
             </li>
             <li>
                 <i class="fa-solid fa-network-wired"></i><a href="network.php">Network</a>
